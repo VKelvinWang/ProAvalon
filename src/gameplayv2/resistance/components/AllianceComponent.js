@@ -1,8 +1,10 @@
+import { Component } from 'ecsy';
+
 //defines the type of alliances
 const allianceTypes = {
-    Spy: "Spy",
-    Resistance: "Resistance"
-};
+    Spy = "Spy",
+    Resistance = "Resistance"
+}
 
 //define a class for alliance component
 export class AllianceComponent{

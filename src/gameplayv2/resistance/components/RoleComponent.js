@@ -1,3 +1,5 @@
+import { Component } from 'ecsy';
+
 //extends component
 //define a class for role component
 export class RoleComponent{

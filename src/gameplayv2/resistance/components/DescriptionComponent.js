@@ -1,3 +1,5 @@
+import { Component } from 'ecsy';
+
 //define a class for description component
 export class DescriptionComponent{
     constructor(description){

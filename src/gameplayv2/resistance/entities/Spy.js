@@ -1,10 +1,9 @@
-import { AllianceComponent } from  '../components/AllianceComponent';
-import { DescriptionComponent } from '../components/DescriptionComponent';
-import { RoleComponent } from '../components/RoleComponent';
+import { alliance } from '../components/alliance'
+import { world } from '../system'
 
-Spy.nextId = 0;
-class Spy extends Player{
-    constructor(){
+Resistance.nextId = 0;
+class Spy extends Player {
+    constructor() {
         this.id = Entity.getNextID();
         this.components = [];
         this.addComponent(new AllianceComponent("Spy"));
@@ -12,20 +11,15 @@ class Spy extends Player{
         this.addComponent(new DescriptionComponent("A standard Spy member."));
     }
 
-    addComponent(component){
+    addComponent(component) {
         this.components.push(component);
     }
 
-    addComponents(...components) {
-        components.forEach(component => this.addComponent(component));
-    }
-      
     removeComponent(component) {
-        delete this.components[component.constructor.name];
-    }
-      
-    getComponent(componentClass) {
-        return this.components[componentClass.name];
+        const index = this.components.indexOf(component);
+        if (index !== -1) {
+            this.components.splice(index, 1);
+        }
     }
 
     static getNextID() {
