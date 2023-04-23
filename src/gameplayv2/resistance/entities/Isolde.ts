@@ -13,7 +13,7 @@ class Isolde extends Entity {
     this.id = Isolde.getNextID();
     this.components = [];
     this.addComponent(new RoleComponent('Isolde'));
-    this.addComponent(new AllianceComponent('Good'));
+    this.addComponent(new AllianceComponent('Resistance'));
   }
 
   addComponent(component: Component): void {

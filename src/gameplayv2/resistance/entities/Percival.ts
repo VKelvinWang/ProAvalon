@@ -1,9 +1,9 @@
-import { AllianceComponent } from '../components/AllianceComponent';
+import { Component } from '../components/Component';
 import { RoleComponent } from '../components/RoleComponent';
-import { DescriptionComponent } from '../components/DescriptionComponent';
-import { Entity } from '../system';
+import { AllianceComponent } from '../components/AllianceComponent';
+import { Entity } from '../system/Entity';
 
-class Percival extends Player {
+class Percival extends Entity {
     static nextId: number = 0;
     id: number;
     components: Component[];
