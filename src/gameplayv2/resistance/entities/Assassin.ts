@@ -34,3 +34,7 @@ class Assassin extends Player {
 }
 
 //TO DO: See Assassin & win condition 
+//Pass a list of player list so Assassin knows who the killer is with condition (Lookup obj containng list of all components)
+// Pass through all the
+//Define Assassin as a phase 
+// 
